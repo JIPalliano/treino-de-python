@@ -1,21 +1,10 @@
-import math as mt
+def distance_between_points(a, b):
+    Ax = a[0] #1
+    Ay = a[1] #6
+    Bx = b[0] #4
+    By = b[1] #2
+    x = ((Ax-Bx)**2)+((Ay-By)**2)
+    r = x **(1/2)
+    return r
 
-#treinamento de lambda
-
-#to_alternating_case = lambda string: string.swapcase()
-
-#merge_arrays=lambda a,b:sorted({*(a+b)})
-
-#lista = merge_arrays([1,2,3], [0,2,4])
-
-
-#test = lambda x: [ int(x[i] **(1/2)) for i in range(len(x))]
-
-square_or_square_root=lambda arr: [e**(1/2) if e**(1/2)%1==0 else e**2 for e in arr ]
-
-# [2, 9, 3, 49, 4, 1]
-lista = [4, 3, 9, 7, 2, 1]
-
-print(square_or_square_root(lista))
-
-#print(int(4**(1/2)))
+print(distance_between_points((-10.2,12.5), (0.3,14.7)))
