@@ -102,7 +102,7 @@ while True:
             print("Obrigado por participar da Listinha do mercado cibernético")
             break
         else:
-            print("Por favor digite algum número entre 1 e 4")
+            print("Por favor digite algum número entre 1 e 4.")
         
     except Exception:
-        print("valor inválido, por favor digite entre 1 e 4")
+        print("valor inválido, por favor digite entre 1 e 4.")
